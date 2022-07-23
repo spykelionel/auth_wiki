@@ -11,11 +11,11 @@ The Python library contains bundles of code that can be used repeatedly in diffe
 
 ## Features
 * `Sign-up`
-        Enables Users to register their details and gain access to the platform
+        Enables users to register their details and gain access to the platform
 * `Login`
        It is a security measure designed to prevent unauthorized access to confidential data
  * `Comment`
-       Adding suggestions to a Post in the form of text 
+       Commenting or adding suggestions to a post in the form of text 
  * `Edit user details`
        User's credentials can be updated after signup. For example if the user wants to change their name, they can do so here
  * `List all users`
@@ -27,6 +27,7 @@ The Python library contains bundles of code that can be used repeatedly in diffe
 
 ## Requirements needed to be Registered
 
+* Name
 * Email
 * password 
 
