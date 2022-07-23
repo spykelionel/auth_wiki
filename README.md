@@ -1,13 +1,10 @@
 # auth_wiki
 
-Its a library of authentication codes, examples and community interactions. It enables developers to acquire token or session.
-
-Why are Python libraries useful?
+Its a library of authentication codes examples and community interactions. It also enables developers to acquire token or session.
 
 ## Technologies used and why?
 
-* PYTHON
-
+* *Python*
 Python is extremely powerful, secure and very advanced for web design and development.
 A Python library is contains bundles of code that can be used repeatedly in different programs. It makes Python Programming simpler and convenient for the programmer. 
 
@@ -26,8 +23,9 @@ When the credential is successfully verified, the request is authenticated
  * `List all users`
        To view all registered users
  * `Reactions`
-        A user can react to an authentication code by giving it an up-vote or down-vote 
+        A user can react to an authentication code by giving it an thumbs-up or thumbs-down 
  * `Edit auth code`
+        An Auth-Code is a code created by a registrar to help identify the domain name holder and it be edited using this feature.
 
 ## Benefits of Authenticated Users
 
