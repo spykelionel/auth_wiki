@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
-from django.contrib.auth import login, authenticate
+from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.forms import UserCreationForm
-
+from django.contrib import messages
 
 from account.forms import SignupForm
 
@@ -12,7 +12,7 @@ def home(request):
     
 
 def signup(request):
-
+    form =SignupForm(request.POST)
     if request.method == 'POST':
         form =SignupForm(request.POST)
         
@@ -24,6 +24,29 @@ def signup(request):
             login(request,user)
             return redirect('home')
     
-    else:
-        form =SignupForm()
-    return render(request, 'signup.html',{'form':form})
+        else:
+            messages.info(request, 'Cannot sign up. Please, refill the form correctly') 
+    context = {'form': form}
+    return render(request, 'signup.html', context)
+
+
+
+def loginpage(request):
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        raw_password = request.POST.get('password')
+
+        user = authenticate(request, username=username, password=raw_password)
+        if user is not None:
+            login(request, user)
+            return redirect('home')
+        else:
+                messages.error(request,'Username Or Password Is Incorrect')
+
+    context = {} 
+    return render(request, 'login.html', context)  
+
+
+def userlogout(request):
+    logout(request)
+    return redirect('home')
