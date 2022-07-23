@@ -13,13 +13,13 @@ A Python library is contains bundles of code that can be used repeatedly in diff
 * Email
 * password 
 
-When the credential is successfully verified, the request is authenticated
+When the credential is successfully verified during login, the request is authenticated
 
 ## Features
  * `Comment`
        Adding suggestions in the form of text to a Post 
  * `Edit user details`
-       User's credentials can be updated. For example if the user forgot their paasword and wants to change it 
+       User's credentials can be updated after signup. For example if the user wants to change their name, they can do so here
  * `List all users`
        To view all registered users
  * `Reactions`
