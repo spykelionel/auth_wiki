@@ -1,21 +1,18 @@
 # auth_wiki
 
-Its a library of authentication codes examples and community interactions. It also enables developers to acquire token or session.
+It is a Webapp that has a library of authentication codes examples and community interactions.
 
 ## Technologies used and why?
 
 * **Python** 
 Python is extremely powerful, secure and very advanced for web design and development.
-A Python library is contains bundles of code that can be used repeatedly in different programs. It makes Python Programming simpler and convenient for the programmer. 
-
-## Requirements needed to be Registered
-
-* Email
-* password 
-
-When the credential is successfully verified during login, the request is authenticated
+The Python library contains bundles of code that can be used repeatedly in different programs. It makes Python Programming simpler and convenient for the programmer. 
 
 ## Features
+* `Sign-up`
+        Enables Users to register thier details and gain access to the platform
+* `Login`
+       It is a security measure designed to prevent unauthorized access to confidential data
  * `Comment`
        Adding suggestions in the form of text to a Post 
  * `Edit user details`
@@ -25,13 +22,19 @@ When the credential is successfully verified during login, the request is authen
  * `Reactions`
         A user can react to an authentication code by giving it an thumbs-up or thumbs-down 
  * `Edit auth code`
-        An Auth-Code is a code created by a registrar to help identify the domain name holder and it be edited using this feature.
+        An Auth-Code is a code created by the webapp to help identify the domain name holder and it be edited using this feature.
+
+## Requirements needed to be Registered
+
+* Email
+* password 
+
+When the credential is successfully verified during login, the request is authenticated
 
 ## Benefits of Authenticated Users
 
 * Full access to the platform
-* Contribute, however, contribution should be limited to comments and
-  reactions
+* Contribute by commenting and reacting
 * Able to view example usage
 * Download code samples
 
@@ -40,4 +43,4 @@ When the credential is successfully verified during login, the request is authen
 * Visit the platform just to view basic information about it
 * View and Interact with the documentation
 * Register and login to contribute
-* Browse through library with limited information
+* Browse through library but with limited information
