@@ -19,11 +19,15 @@ A Python library is contains bundles of code that can be used repeatedly in diff
 When the credential is successfully verified, the request is authenticated
 
 ## Features
- * Comment
- * Edit user details
- * List all users
- * Reactions
- * Edit auth code
+ *Comment*
+       Adding suggestions in the form of text `comment`
+ *Edit user details*
+       User's credentials can be updated. For example if the user forgot their paasword and wants to change it 
+ *List all users*
+       To view all registered users
+ *Reactions*
+        A user can react to an authentication code by giving it an up-vote or down-vote ![Image](https://www.emojipng.com/preview/12080087)
+ *Edit auth code*
 
 ## Benefits of Authenticated Users
 
@@ -33,7 +37,7 @@ When the credential is successfully verified, the request is authenticated
 * Able to view example usage
 * Download code samples
 
-## While Unauthenticated Users can only:
+## Unauthenticated Users can only:
 
 * Visit the platform just to view basic information about it
 * View and Interact with the documentation
