@@ -5,6 +5,7 @@ It is a Webapp that has a library of authentication codes examples and community
 ## Technologies used and why?
 
 * **Python** 
+
 Python is extremely powerful, secure and very advanced for web design and development.
 The Python library contains bundles of code that can be used repeatedly in different programs. It makes Python Programming simpler and convenient for the programmer. 
 
