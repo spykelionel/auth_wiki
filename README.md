@@ -4,7 +4,7 @@ Its a library of authentication codes examples and community interactions. It al
 
 ## Technologies used and why?
 
-* *Python*
+* **Python** 
 Python is extremely powerful, secure and very advanced for web design and development.
 A Python library is contains bundles of code that can be used repeatedly in different programs. It makes Python Programming simpler and convenient for the programmer. 
 
