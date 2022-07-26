@@ -3,54 +3,59 @@
 {% load crispy_forms_tags %}
 
     {% block content %}
-        <h2>Sign up</h2>
-        <form method="POST">
-            {% csrf_token %}
+ <center style="margin-top: 100px;">
 
-            {% for message in messages %}
-              <p style="color: red;">{{message}}</p>
-              {% endfor %}
+    <h2>Sign up</h2>
+    <form method="POST">
+        {% csrf_token %}
 
-     
-            <div class="form"> 
-                <div class="text">
-                 <div>{{form.username.label}}</div>
-                </div>
-                <div class="input" >
-                 {{form.username}}
-                </div>
-             </div>
-                 
-            <div class="form">
-                 <div class="text">
-                 <div>  {{form.email.label}}</div>
-                 </div>
-                 <div class="input">                  
-                 {{form.email}}               
-                 </div>
-            </div>
+        {% for message in messages %}
+          <p style="color: red;">{{message}}</p>
+          {% endfor %}
+
  
-            <div class="form">                    
-                <div class="text">
-                <div> {{form.password1.label}}</div>
-                </div>
-                <div class="input">            
-                 {{form.password1}}
-                 <p style="color: green;">Must be up to 6 values, alphabets and numerals</p>               
-                </div>
-                
+        <div class="form"> 
+            <div class="text">
+             <div>{{form.username.label}}</div>
             </div>
-                 
-            <div class="form">
-                <div class="text">
-                 <div>{{form.password2.label}}</div>
-                </div>
-                <div class="input">               
-                 {{form.password2}} 
-                 <p style="color: green;">Repeat Password</p>               
-                </div>
+            <div class="input" >
+             {{form.username}}
             </div>
+         </div>
+             
+        <div class="form">
+             <div class="text">
+             <div>  {{form.email.label}}</div>
+             </div>
+             <div class="input">                  
+             {{form.email}}               
+             </div>
+        </div>
 
-            <button type="submit">Sign up</button>
-        </form>
+        <div class="form">                    
+            <div class="text">
+            <div> {{form.password1.label}}</div>
+            </div>
+            <div class="input">            
+             {{form.password1}}
+             <p style="color: green;">Must be up to 6 values, alphabets and numerals</p>               
+            </div>
+            
+        </div>
+             
+        <div class="form">
+            <div class="text">
+             <div>{{form.password2.label}}</div>
+            </div>
+            <div class="input">               
+             {{form.password2}} 
+             <p style="color: green;">Repeat Password</p>               
+            </div>
+        </div>
+
+        <button type="submit">Sign up</button>
+    </form>
+
+
+ </center>
     {% endblock %}

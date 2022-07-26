@@ -7,8 +7,7 @@ from account.forms import SignupForm
 
 # Create your views here.
 
-def home(request):
-    return render(request, "home.html")
+
     
 
 def signup(request):
