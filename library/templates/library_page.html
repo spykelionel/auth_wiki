@@ -2,17 +2,21 @@
 
 {% block content %}
 
-
-{% for library in all_libraries %}
-
-<h1>{{ library.title }} Authentication Library</h1>
+<center style="margin-top: 100px;">
 
 
-<h6>Added at {{ library.date_added }}</h6>
-<a href="{% url 'library_detail' library.slug %}"><button>Read More</button></a>
+    {% for library in all_libraries %}
 
-{% endfor %}
+    <h1>{{ library.title }} Authentication Library</h1>
+    
+    
+    <h6>Added at {{ library.date_added }}</h6>
+    <a href="{% url 'library_detail' library.slug %}"><button>Read More</button></a>
+    
+    {% endfor %}
+    
+    
 
-
+</center>
 
 {% endblock content %}

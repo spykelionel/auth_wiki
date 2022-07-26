@@ -27,3 +27,6 @@ def library_detail(request, slug):
     else:   
         cf = CommentForm()
     return render(request, 'library_detail.html', {'library' : library, 'comment_form':cf})
+
+
+  
