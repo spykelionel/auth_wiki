@@ -10,9 +10,13 @@
     
     <h3>{{ library.library_content }}</h3>
     
-    <h6>Added at {{ library.date_added }}</h6>
+    <div>
+    <h6>Added at {{ library.date_added }}</h6> 
     
-    
+        <h6 style="color: red;">
+            <a href="{{library.adminupload.url}}" type="application/octet-stream" download>Download</a>
+        </h6>
+    </div>
     
     <hr style="margin-top: 100px;">
   
