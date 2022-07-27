@@ -1,6 +1,5 @@
 from django.db import models
 from django.contrib.auth.models import User
-from django.utils import timezone
 # Create your models here.
 
 
@@ -12,6 +11,7 @@ class Post(models.Model):
     libary_intro = models.TextField(default='Library Introduction')
     library_content = models.TextField()
     date_added = models.DateTimeField(auto_now_add=True)
+    adminupload = models.FileField(upload_to='media', default='DEFAULT VALUE')
     
     def __str__(self):
         return self.title
@@ -28,4 +28,6 @@ class Comment(models.Model):
 
     class Meta:
         ordering = ['-date_added'] 
+        
+
    
