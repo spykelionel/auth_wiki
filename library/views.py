@@ -1,7 +1,11 @@
 
+import os
+from urllib import response
+from django.conf import settings
 from django.shortcuts import render,redirect
 from . models import *
 from . forms import CommentForm
+from django.http import HttpResponse
 # from account import forms
 
 # Create your views here.
@@ -29,4 +33,12 @@ def library_detail(request, slug):
     return render(request, 'library_detail.html', {'library' : library, 'comment_form':cf})
 
 
-  
+def download(request,path):
+    file_path =os.path.join(settings.MEDIA_ROOT,path)
+    if os.path.exists(file_path):
+        with open(file_path,'rb')as fh:
+            #response = HttpResponse(fh.read(),content_type="application/octet-stream")
+            response = HttpResponse(mimetype='application/adminupload')
+            response['Content-Disposition']='inline;filename'+os.path.basename(file_path)
+            return response
+    raise Http404("File not found")

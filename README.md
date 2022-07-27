@@ -46,3 +46,4 @@ When the credential is successfully verified during login, the request is authen
 * View and Interact with the documentation
 * Register and login to contribute
 * Browse through library but with limited information
+* More to come ..
